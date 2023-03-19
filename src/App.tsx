@@ -23,33 +23,26 @@ function Node({ node }: { node: Node }) {
       <div style={{ gridArea: "value" }}>{node.value}</div>
       {node.left && (
         <div style={{ gridArea: "left" }}>
-          <svg
-            className="line"
-            viewBox="0 0 50 50"
+          <div
+            style={{
+              display: "flex",
+              flexDirection: "row-reverse",
+            }}
           >
-            <line
-              x1="0"
-              y1="25"
-              x2="25"
-              y2="0"
-            />
-          </svg>
+            /
+          </div>
           <Node node={node.left} />
         </div>
       )}
       {node.right && (
         <div style={{ gridArea: "right" }}>
-          <svg
-            className="line"
-            viewBox="0 0 50 50"
+          <div
+            style={{
+              display: "flex",
+            }}
           >
-            <line
-              x1="25"
-              y1="0"
-              x2="50"
-              y2="25"
-            />
-          </svg>
+            \
+          </div>
           <Node node={node.right} />
         </div>
       )}
