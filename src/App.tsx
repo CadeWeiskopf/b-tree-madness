@@ -29,7 +29,11 @@ function Node({ node }: { node: Node }) {
               flexDirection: "row-reverse",
             }}
           >
-            <svg viewBox="0 0 100 10">
+            <svg
+              viewBox="0 0 100 10"
+              width="100%"
+              height="1%"
+            >
               <line
                 x1="50%"
                 y1="5"
@@ -50,7 +54,11 @@ function Node({ node }: { node: Node }) {
               display: "flex",
             }}
           >
-            <svg viewBox="0 0 100 10">
+            <svg
+              viewBox="0 0 100 10"
+              width="100%"
+              height="1%"
+            >
               <line
                 x1="0"
                 y1="5"
