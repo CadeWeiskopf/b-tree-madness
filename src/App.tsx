@@ -31,9 +31,9 @@ function Node({ node }: { node: Node }) {
           >
             <svg viewBox="0 0 100 10">
               <line
-                x1="0"
+                x1="50%"
                 y1="5"
-                x2="100"
+                x2="100%"
                 y2="5"
                 stroke="white"
                 strokeWidth="2"
@@ -54,7 +54,7 @@ function Node({ node }: { node: Node }) {
               <line
                 x1="0"
                 y1="5"
-                x2="100"
+                x2="50%"
                 y2="5"
                 stroke="white"
                 strokeWidth="2"
