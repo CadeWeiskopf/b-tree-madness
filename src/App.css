@@ -15,16 +15,3 @@
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 20px;
 }
-
-.node {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: #fff;
-  border: 1px solid #333;
-  padding: 10px;
-  border-radius: 5px;
-  min-width: 60px;
-  color: black;
-}
