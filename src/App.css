@@ -9,9 +9,3 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
-
-.tree {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 20px;
-}
