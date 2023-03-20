@@ -37,7 +37,7 @@ function Node({ node }: { node: Node }) {
             }}
           >
             <svg
-              viewBox="0 0 100 10"
+              viewBox={`0 0 100 ${10 * node.depth * 3 || 15}`}
               width="100%"
               height="10%"
             >
@@ -63,7 +63,7 @@ function Node({ node }: { node: Node }) {
             }}
           >
             <svg
-              viewBox="0 0 100 10"
+              viewBox={`0 0 100 ${10 * node.depth * 3 || 15}`}
               width="100%"
               height="10%"
             >
