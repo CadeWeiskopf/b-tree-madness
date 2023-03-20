@@ -47,7 +47,7 @@ function Node({ node }: { node: Node }) {
                 y1="100%"
                 x2="100%"
                 y2="0"
-                stroke="white"
+                stroke="#3f301d"
                 strokeWidth={Math.pow(2, node.depth)}
                 strokeLinecap="round"
               />
@@ -73,7 +73,7 @@ function Node({ node }: { node: Node }) {
                 y1="0"
                 x2="50%"
                 y2="100%"
-                stroke="white"
+                stroke="#3f301d"
                 strokeWidth={Math.pow(2, node.depth)}
                 strokeLinecap="round"
               />
