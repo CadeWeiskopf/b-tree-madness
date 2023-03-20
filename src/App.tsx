@@ -40,7 +40,7 @@ function Node({ node }: { node: Node }) {
                 x2="100%"
                 y2="0"
                 stroke="white"
-                strokeWidth="2"
+                strokeWidth="1"
                 strokeLinecap="round"
               />
             </svg>
@@ -66,7 +66,7 @@ function Node({ node }: { node: Node }) {
                 x2="50%"
                 y2="100%"
                 stroke="white"
-                strokeWidth="2"
+                strokeWidth="1"
                 strokeLinecap="round"
               />
             </svg>
