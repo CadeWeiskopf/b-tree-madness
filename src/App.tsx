@@ -36,9 +36,9 @@ function Node({ node }: { node: Node }) {
             >
               <line
                 x1="50%"
-                y1="5"
+                y1="100%"
                 x2="100%"
-                y2="5"
+                y2="0"
                 stroke="white"
                 strokeWidth="2"
               />
@@ -61,9 +61,9 @@ function Node({ node }: { node: Node }) {
             >
               <line
                 x1="0"
-                y1="5"
+                y1="0"
                 x2="50%"
-                y2="5"
+                y2="100%"
                 stroke="white"
                 strokeWidth="2"
               />
