@@ -9,7 +9,15 @@
       "value": -3,
       "right": {
         "depth": 3,
-        "value": -1
+        "value": -1,
+        "right": {
+          "depth": 4,
+          "value": 0
+        },
+        "left": {
+          "depth": 4,
+          "value": -2
+        }
       }
     },
     "right": {
