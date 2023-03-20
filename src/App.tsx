@@ -3,6 +3,7 @@ import "./App.css";
 
 interface Node {
   value: number;
+  depth: number;
   left?: Node;
   right?: Node;
 }
@@ -45,7 +46,7 @@ function Node({ node }: { node: Node }) {
                 x2="100%"
                 y2="0"
                 stroke="white"
-                strokeWidth="1"
+                strokeWidth={Math.pow(2, node.depth)}
                 strokeLinecap="round"
               />
             </svg>
@@ -71,7 +72,7 @@ function Node({ node }: { node: Node }) {
                 x2="50%"
                 y2="100%"
                 stroke="white"
-                strokeWidth="1"
+                strokeWidth={Math.pow(2, node.depth)}
                 strokeLinecap="round"
               />
             </svg>
@@ -85,15 +86,52 @@ function Node({ node }: { node: Node }) {
 
 function App() {
   const [tree, setTree] = useState<Node>({
+    depth: 0,
     value: 4,
     left: {
+      depth: 1,
       value: 1,
-      left: { value: -3, right: { value: -1 } },
-      right: { value: 3, left: { value: 2 }, right: { value: 4 } },
+      left: {
+        depth: 2,
+        value: -3,
+        right: {
+          depth: 3,
+          value: -1,
+        },
+      },
+      right: {
+        depth: 2,
+        value: 3,
+        left: {
+          depth: 3,
+          value: 2,
+        },
+      },
     },
     right: {
+      depth: 1,
       value: 8,
-      left: { value: 7, left: { value: 6 } },
+      left: {
+        depth: 2,
+        value: 7,
+        left: {
+          depth: 3,
+          value: 6,
+          left: { depth: 4, value: 5 },
+        },
+      },
+      right: {
+        depth: 2,
+        value: 9,
+        right: {
+          depth: 3,
+          value: 10,
+          right: {
+            depth: 4,
+            value: 11,
+          },
+        },
+      },
     },
   });
 
