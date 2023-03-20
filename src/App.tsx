@@ -32,7 +32,7 @@ function Node({ node }: { node: Node }) {
             <svg
               viewBox="0 0 100 10"
               width="100%"
-              height="1%"
+              height="10%"
             >
               <line
                 x1="50%"
@@ -41,6 +41,7 @@ function Node({ node }: { node: Node }) {
                 y2="0"
                 stroke="white"
                 strokeWidth="2"
+                strokeLinecap="round"
               />
             </svg>
           </div>
@@ -57,7 +58,7 @@ function Node({ node }: { node: Node }) {
             <svg
               viewBox="0 0 100 10"
               width="100%"
-              height="1%"
+              height="10%"
             >
               <line
                 x1="0"
@@ -66,6 +67,7 @@ function Node({ node }: { node: Node }) {
                 y2="100%"
                 stroke="white"
                 strokeWidth="2"
+                strokeLinecap="round"
               />
             </svg>
           </div>
