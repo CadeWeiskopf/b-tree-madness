@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./App.css";
+import defaultTree from "./defaultTree.json";
 
 interface Node {
   value: number;
@@ -85,55 +86,7 @@ function Node({ node }: { node: Node }) {
 }
 
 function App() {
-  const [tree, setTree] = useState<Node>({
-    depth: 0,
-    value: 4,
-    left: {
-      depth: 1,
-      value: 1,
-      left: {
-        depth: 2,
-        value: -3,
-        right: {
-          depth: 3,
-          value: -1,
-        },
-      },
-      right: {
-        depth: 2,
-        value: 3,
-        left: {
-          depth: 3,
-          value: 2,
-        },
-      },
-    },
-    right: {
-      depth: 1,
-      value: 8,
-      left: {
-        depth: 2,
-        value: 7,
-        left: {
-          depth: 3,
-          value: 6,
-          left: { depth: 4, value: 5 },
-        },
-      },
-      right: {
-        depth: 2,
-        value: 9,
-        right: {
-          depth: 3,
-          value: 10,
-          right: {
-            depth: 4,
-            value: 11,
-          },
-        },
-      },
-    },
-  });
+  const [tree, setTree] = useState<Node>(defaultTree);
 
   return (
     <div className="App">
