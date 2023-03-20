@@ -17,10 +17,15 @@ function Node({ node }: { node: Node }) {
           "left . right"
         `,
         gridTemplateColumns: "1fr auto 1fr",
-        gap: "8px",
       }}
     >
-      <div style={{ gridArea: "value" }}>{node.value}</div>
+      <div
+        style={{
+          gridArea: "value",
+        }}
+      >
+        {node.value}
+      </div>
       {node.left && (
         <div style={{ gridArea: "left" }}>
           <div
