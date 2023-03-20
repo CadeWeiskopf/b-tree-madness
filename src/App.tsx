@@ -22,6 +22,7 @@ function Node({ node }: { node: Node }) {
       }}
     >
       <div
+        className="node"
         style={{
           gridArea: "value",
         }}
